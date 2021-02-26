@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Python-iOS",
+        "repositoryURL": "https://github.com/kewlbear/Python-iOS.git",
+        "state": {
+          "branch": "kivy-ios",
+          "revision": "d5964d0bac4839a5f095550786626979945ebf04",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
