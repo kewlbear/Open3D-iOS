@@ -22,6 +22,6 @@ let package = Package(
             resources: [.copy("site-packages")]),
         .testTarget(
             name: "Open3D-iOSTests",
-            dependencies: ["Open3D-iOS"]),
+            dependencies: ["Open3DSupport"]),
     ]
 )
