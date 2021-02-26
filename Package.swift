@@ -13,9 +13,10 @@ let package = Package(
         .package(url: "https://github.com/kewlbear/Python-iOS.git", .branch("kivy-ios")),
     ],
     targets: [
+        .binaryTarget(name: "libOpen3D", path: "libOpen3D.xcframework"),
         .target(
             name: "Link",
-            dependencies: ["libOpen3D", "Python-iOS"]),
+            dependencies: ["Python-iOS"]),
         .target(
             name: "Open3DSupport",
             resources: [.copy("site-packages")]),
