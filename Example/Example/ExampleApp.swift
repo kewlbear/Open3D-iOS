@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import Open3DSupport
+import NumPySupport
+import PythonSupport
 
 @main
 struct ExampleApp: App {
@@ -13,5 +16,13 @@ struct ExampleApp: App {
         WindowGroup {
             ContentView()
         }
+    }
+    
+    init() {
+        PythonSupport.initialize()
+        Open3DSupport.sitePackagesURL.insertPythonPath()
+        NumPySupport.sitePackagesURL.insertPythonPath()
+        
+
     }
 }
