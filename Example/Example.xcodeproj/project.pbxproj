@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		4C888FCD25EDC040005BE18A /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4C888FCC25EDC040005BE18A /* PythonKit */; };
 		4C888FD025EDC879005BE18A /* fragment.ply in Resources */ = {isa = PBXBuildFile; fileRef = 4C888FCF25EDC879005BE18A /* fragment.ply */; };
+		4CA4237D25EE1160003918C8 /* Open3D-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4CA4237C25EE1160003918C8 /* Open3D-iOS */; };
 		4CD3A25225E8DD5C0013D42E /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3A25125E8DD5C0013D42E /* ExampleApp.swift */; };
 		4CD3A25425E8DD5C0013D42E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3A25325E8DD5C0013D42E /* ContentView.swift */; };
 		4CD3A25625E8DD5D0013D42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3A25525E8DD5D0013D42E /* Assets.xcassets */; };
 		4CD3A25925E8DD5D0013D42E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3A25825E8DD5D0013D42E /* Preview Assets.xcassets */; };
-		E10E8DEC25EC5C3000FDC4C0 /* Open3D-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = E10E8DEB25EC5C3000FDC4C0 /* Open3D-iOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10E8DEC25EC5C3000FDC4C0 /* Open3D-iOS in Frameworks */,
 				4C888FCD25EDC040005BE18A /* PythonKit in Frameworks */,
+				4CA4237D25EE1160003918C8 /* Open3D-iOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +95,8 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				E10E8DEB25EC5C3000FDC4C0 /* Open3D-iOS */,
 				4C888FCC25EDC040005BE18A /* PythonKit */,
+				4CA4237C25EE1160003918C8 /* Open3D-iOS */,
 			);
 			productName = Example;
 			productReference = 4CD3A24E25E8DD5C0013D42E /* Example.app */;
@@ -126,8 +126,8 @@
 			);
 			mainGroup = 4CD3A24525E8DD5C0013D42E;
 			packageReferences = (
-				E10E8DEA25EC5C3000FDC4C0 /* XCRemoteSwiftPackageReference "Open3D-iOS" */,
 				4C888FCB25EDC040005BE18A /* XCRemoteSwiftPackageReference "PythonKit" */,
+				4CA4237B25EE1160003918C8 /* XCRemoteSwiftPackageReference "Open3D-iOS" */,
 			);
 			productRefGroup = 4CD3A24F25E8DD5C0013D42E /* Products */;
 			projectDirPath = "";
@@ -358,9 +358,9 @@
 				kind = branch;
 			};
 		};
-		E10E8DEA25EC5C3000FDC4C0 /* XCRemoteSwiftPackageReference "Open3D-iOS" */ = {
+		4CA4237B25EE1160003918C8 /* XCRemoteSwiftPackageReference "Open3D-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/changbeomahn/Projects/Open3D-iOS";
+			repositoryURL = "https://github.com/kewlbear/Open3D-iOS.git";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -374,9 +374,9 @@
 			package = 4C888FCB25EDC040005BE18A /* XCRemoteSwiftPackageReference "PythonKit" */;
 			productName = PythonKit;
 		};
-		E10E8DEB25EC5C3000FDC4C0 /* Open3D-iOS */ = {
+		4CA4237C25EE1160003918C8 /* Open3D-iOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E10E8DEA25EC5C3000FDC4C0 /* XCRemoteSwiftPackageReference "Open3D-iOS" */;
+			package = 4CA4237B25EE1160003918C8 /* XCRemoteSwiftPackageReference "Open3D-iOS" */;
 			productName = "Open3D-iOS";
 		};
 /* End XCSwiftPackageProductDependency section */
