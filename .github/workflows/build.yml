@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ kivy-ios ]
+    branches: [ main ]
   pull_request:
-    branches: [ kivy-ios ]
+    branches: [ main ]
 
 jobs:
   build:
