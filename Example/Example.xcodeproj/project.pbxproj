@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C888FCD25EDC040005BE18A /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4C888FCC25EDC040005BE18A /* PythonKit */; };
 		4C888FD025EDC879005BE18A /* fragment.ply in Resources */ = {isa = PBXBuildFile; fileRef = 4C888FCF25EDC879005BE18A /* fragment.ply */; };
-		4CA4237D25EE1160003918C8 /* Open3D-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4CA4237C25EE1160003918C8 /* Open3D-iOS */; };
+		4C8B335B261552B800643DC2 /* Open3D-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4C8B335A261552B800643DC2 /* Open3D-iOS */; };
 		4CD3A25225E8DD5C0013D42E /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3A25125E8DD5C0013D42E /* ExampleApp.swift */; };
 		4CD3A25425E8DD5C0013D42E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3A25325E8DD5C0013D42E /* ContentView.swift */; };
 		4CD3A25625E8DD5D0013D42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3A25525E8DD5D0013D42E /* Assets.xcassets */; };
@@ -32,7 +32,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C888FCD25EDC040005BE18A /* PythonKit in Frameworks */,
-				4CA4237D25EE1160003918C8 /* Open3D-iOS in Frameworks */,
+				4C8B335B261552B800643DC2 /* Open3D-iOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			name = Example;
 			packageProductDependencies = (
 				4C888FCC25EDC040005BE18A /* PythonKit */,
-				4CA4237C25EE1160003918C8 /* Open3D-iOS */,
+				4C8B335A261552B800643DC2 /* Open3D-iOS */,
 			);
 			productName = Example;
 			productReference = 4CD3A24E25E8DD5C0013D42E /* Example.app */;
@@ -125,7 +125,7 @@
 			mainGroup = 4CD3A24525E8DD5C0013D42E;
 			packageReferences = (
 				4C888FCB25EDC040005BE18A /* XCRemoteSwiftPackageReference "PythonKit" */,
-				4CA4237B25EE1160003918C8 /* XCRemoteSwiftPackageReference "Open3D-iOS" */,
+				4C8B3359261552B800643DC2 /* XCRemoteSwiftPackageReference "Open3D-iOS" */,
 			);
 			productRefGroup = 4CD3A24F25E8DD5C0013D42E /* Products */;
 			projectDirPath = "";
@@ -197,7 +197,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -259,7 +258,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -295,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.kewlbear.open3d.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.rhk.open3d.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.kewlbear.open3d.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.rhk.open3d.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,7 +354,7 @@
 				kind = branch;
 			};
 		};
-		4CA4237B25EE1160003918C8 /* XCRemoteSwiftPackageReference "Open3D-iOS" */ = {
+		4C8B3359261552B800643DC2 /* XCRemoteSwiftPackageReference "Open3D-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kewlbear/Open3D-iOS.git";
 			requirement = {
@@ -372,9 +370,9 @@
 			package = 4C888FCB25EDC040005BE18A /* XCRemoteSwiftPackageReference "PythonKit" */;
 			productName = PythonKit;
 		};
-		4CA4237C25EE1160003918C8 /* Open3D-iOS */ = {
+		4C8B335A261552B800643DC2 /* Open3D-iOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4CA4237B25EE1160003918C8 /* XCRemoteSwiftPackageReference "Open3D-iOS" */;
+			package = 4C8B3359261552B800643DC2 /* XCRemoteSwiftPackageReference "Open3D-iOS" */;
 			productName = "Open3D-iOS";
 		};
 /* End XCSwiftPackageProductDependency section */
