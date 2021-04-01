@@ -23,6 +23,8 @@ let o3d = Python.import("open3d")
 ...
 ```
 
+If you want to build XCFrameworks yourself, see https://github.com/kewlbear/Open3D.
+
 ## License
 
 MIT
