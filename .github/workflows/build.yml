@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    branches: [ kivy-ios ]
+  pull_request:
+    branches: [ kivy-ios ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: sh Scripts/ci.sh
+      id: script
+    - name: Commit
+      uses: EndBug/add-and-commit@v7
+      with:
+        add: 'Package.swift Sources'
+        message: "add ${{ steps.script.outputs.tag }}"
+    - name: Release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "${{ steps.script.outputs.tag }}"
+        files: 'kivy-ios/*.xcframework.zip'
+        prerelease: false
