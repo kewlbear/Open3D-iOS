@@ -25,5 +25,5 @@ jobs:
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "${{ steps.script.outputs.tag }}"
-        files: 'kivy-ios/*.xcframework.zip'
+        files: 'Open3D/*.xcframework.zip'
         prerelease: false
