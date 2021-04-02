@@ -38,7 +38,7 @@ let package = Package(
         .binaryTarget(name: "libOpen3D_3rdparty_lzf.a", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/TAG/libOpen3D_3rdparty_lzf.a.xcframework.zip", checksum: "libOpen3D_3rdparty_lzf.a.xcframework_CHECKSUM"),
         .binaryTarget(name: "libOpen3D_3rdparty_qhull_r.a", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/TAG/libOpen3D_3rdparty_qhull_r.a.xcframework.zip", checksum: "libOpen3D_3rdparty_qhull_r.a.xcframework_CHECKSUM"),
         .binaryTarget(name: "libOpen3D_3rdparty_qhullcpp.a", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/TAG/libOpen3D_3rdparty_qhullcpp.a.xcframework.zip", checksum: "libOpen3D_3rdparty_qhullcpp.a.xcframework_CHECKSUM"),
-        .binaryTarget(name: "libOpen3D_3rdparty_rply.a", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/TAG/libOpen3D_3rdparty_rply.a.xcframework.zip", checksum: "libOpen3D_3rdparty_.xcframework_CHECKSUM"),
+        .binaryTarget(name: "libOpen3D_3rdparty_rply.a", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/TAG/libOpen3D_3rdparty_rply.a.xcframework.zip", checksum: "libOpen3D_3rdparty_rply.xcframework_CHECKSUM"),
         .binaryTarget(name: "libOpen3D.a", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/TAG/libOpen3D.a.xcframework.zip", checksum: "libOpen3D.a.xcframework_CHECKSUM"),
         .binaryTarget(name: "libpng.a", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/TAG/libpng.a.xcframework.zip", checksum: "libpng.a.xcframework_CHECKSUM"),
         .binaryTarget(name: "pybind.a", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/TAG/pybind.a.xcframework.zip", checksum: "pybind.a.xcframework_CHECKSUM"),
