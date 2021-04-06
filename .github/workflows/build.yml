@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ kivy-ios ]
+    branches: [ main ]
   pull_request:
-    branches: [ kivy-ios ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -13,6 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - run: python --version
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+    - run: python --version
     - run: sh Scripts/ci.sh
       id: script
     - name: Commit
@@ -25,5 +30,5 @@ jobs:
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "${{ steps.script.outputs.tag }}"
-        files: 'kivy-ios/*.xcframework.zip'
+        files: 'Open3D/*.xcframework.zip'
         prerelease: false
