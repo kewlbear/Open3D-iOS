@@ -28,6 +28,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/kewlbear/NumPy-iOS.git", .branch("main")),
         .package(url: "https://github.com/kewlbear/LAPACKE-iOS.git", .branch("main")),
+        .package(url: "https://github.com/kewlbear/BLAS-LAPACK-AppStore-Workaround.git", .branch("main")),
     ],
     targets: [
         .binaryTarget(name: "Assimp", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/TAG/Assimp.xcframework.zip", checksum: "Assimp.xcframework_CHECKSUM"),
@@ -61,6 +62,7 @@ let package = Package(
                 "libpng.a",
                 "pybind.a",
                 "TBB",
+                "BLAS-LAPACK-AppStore-Workaround",
             ],
             linkerSettings: [
                 .linkedLibrary("stdc++"),
