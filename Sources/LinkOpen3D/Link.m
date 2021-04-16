@@ -23,11 +23,8 @@
 //
 
 #import <Python.h>
+#import <PythonSupport.h>
 
 PyMODINIT_FUNC PyInit_pybind(void);
 
-typedef PyMODINIT_FUNC(*initfunc_t)(void);
-
-initfunc_t open3d_initfuncs[] = {
-    PyInit_pybind,
-};
+ForceLink(Open3D, PyInit_pybind())
