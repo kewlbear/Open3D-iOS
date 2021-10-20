@@ -1,6 +1,6 @@
 # Open3D-iOS
 
-This swift package enables you to use Open3D in your iOS apps.
+Swift package to use Open3D in iOS apps.
 
 ## Installation
 
