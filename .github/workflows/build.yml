@@ -22,7 +22,7 @@ jobs:
       id: script
     - run: |
         cd Example
-        xcodebuild
+        xcodebuild -configuration Debug
     - name: Commit
       uses: EndBug/add-and-commit@v7
       with:
