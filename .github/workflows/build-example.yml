@@ -5,5 +5,5 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-        cd Example
-        xcodebuild
+          cd Example
+          xcodebuild
