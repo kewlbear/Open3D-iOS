@@ -17,11 +17,13 @@ import PythonSupport
 import PythonKit
 
 PythonSupport.initialize()
-Open3DSupport.sitePackageUrl.insertPythonPath()
-NumPySupport.sitePackageUrl.insertPythonPath()
+Open3DSupport.sitePackagesURL.insertPythonPath()
+NumPySupport.sitePackagesURL.insertPythonPath()
 let o3d = Python.import("open3d")
 ...
 ```
+
+Above code requires `https://github.com/pvieito/PythonKit.git` package.
 
 See Example directory for more.
 
