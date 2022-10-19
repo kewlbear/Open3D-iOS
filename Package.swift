@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "Open3D-iOS",
     platforms: [
-        .iOS("16")
+        .iOS("14")
     ],
     products: [
         .library(
