@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NumPy-iOS",
+        "repositoryURL": "https://github.com/kewlbear/NumPy-iOS.git",
+        "state": {
+          "branch": "main",
+          "revision": "0f5d909f2353fad05deb8c3b6256ebbbb60453c2",
+          "version": null
+        }
+      },
+      {
+        "package": "Python-iOS",
+        "repositoryURL": "https://github.com/kewlbear/Python-iOS.git",
+        "state": {
+          "branch": "kivy-ios",
+          "revision": "d5964d0bac4839a5f095550786626979945ebf04",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
